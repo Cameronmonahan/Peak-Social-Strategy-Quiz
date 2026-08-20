@@ -122,12 +122,19 @@
           </label>
 
           <!-- Hidden context passed with submission -->
+          <!-- Clean, human-readable digest — this is what shows up nicely
+               in the email. Placed first so it's the top of the message. -->
+          <input type="hidden" name="Lead Summary" id="hiddenSummary">
+          <input type="hidden" name="Result" id="hiddenResult">
+
+          <!-- Raw structured fields — kept for spreadsheet export / future
+               CRM automation. Not needed just to read the email. -->
           <input type="hidden" name="strategy" id="hiddenStrategy">
           <input type="hidden" name="attention_percentage" id="hiddenAttention">
           <input type="hidden" name="identity_percentage" id="hiddenIdentity">
           <input type="hidden" name="question_path" id="hiddenPath">
           <input type="hidden" name="date_completed" id="hiddenDate">
-          <input type="hidden" name="_subject" value="New Attention–Identity lead">
+          <input type="hidden" name="_subject" id="hiddenSubject" value="New PEM Strategy Finder Lead">
 
           <button type="submit" class="btn btn-primary btn-large btn-full" id="submitLeadBtn">
             <span>Build My Strategy</span>

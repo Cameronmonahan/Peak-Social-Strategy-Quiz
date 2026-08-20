@@ -6,7 +6,7 @@
 /* --------------------------------------------------------------------------
    1. CONFIG — set this to your Formspree endpoint (see README.md)
    -------------------------------------------------------------------------- */
-const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; // <-- replace me
+const FORM_ENDPOINT = "https://formspree.io/f/mvkpdvka"; // <-- replace me
 
 /* --------------------------------------------------------------------------
    2. QUESTION TREE
